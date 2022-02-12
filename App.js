@@ -1,16 +1,28 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
-const HelloWorldApp = () => {
+import Tabs from './navigation/tabs';
+import Header from './components/Head';
+
+
+const App = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-      }}>
-      <Text>Hello, world!</Text>
-    </View>
-  )
+    <NavigationContainer
+      tabBarOptions={{
+        style: {
+          elevation: 0,
+        }
+      }}
+    >
+      <Tabs />
+    </NavigationContainer>
+  );
 }
-export default HelloWorldApp;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  }
+})
+export default App;

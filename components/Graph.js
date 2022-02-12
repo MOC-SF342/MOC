@@ -5,8 +5,8 @@ import Header from './Head';
 const Home = () => {
   return (
     <View style={styles.container}>
-      <Header/>
-      <Text>Home</Text>
+        <Header/>
+        <Text>This is Graph Page</Text>
     </View>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, CommonActions } from '@react-navigation/native';
 
 import Tabs from './navigation/tabs';
 import Header from './components/Head';
@@ -14,7 +14,7 @@ const App = () => {
           elevation: 0,
         }
       }}
-    >
+    > 
       <Tabs />
     </NavigationContainer>
   );

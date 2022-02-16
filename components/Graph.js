@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import Header from './Head';
 
-const Home = () => {
+const Graph = () => {
   return (
     <View style={styles.container}>
         <Header/>
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default Home;
+export default Graph;

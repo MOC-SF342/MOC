@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet,Image ,Button} from 'react-native';
+import { Text, View, StyleSheet,Image ,Button,TouchableOpacity,Linking } from 'react-native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { ScrollView } from 'react-native-gesture-handler';
 import { NavigationContainer, CommonActions } from '@react-navigation/native';
@@ -10,17 +10,39 @@ import { color } from 'react-native-reanimated';
 const Home = () => {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header/>
       <Text style={styles.newstext}>
         News
       </Text>
-      <View style={styles.news}>
+      
+      <ScrollView style={styles.scrollView} horizontal={true}>
 
-      </View>
+        <TouchableOpacity style={styles.layoutnew} onPress={() =>Linking.openURL("https://std.moc.go.th/std")}>
+        <Image style={styles.newlink} source={{uri:"https://www.moc.go.th/th/file/get/file/202108229420152087bee681a367a58af29afcf1160148.png"}} />
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.layoutnew} onPress={() =>Linking.openURL("https://account.moc.go.th/")}>
+        <Image style={styles.newlink} source={{uri:"https://www.moc.go.th/th/file/get/file/20211230838acd8369b6fa15068c0553df9e6174121051.png"}} />
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.layoutnew} onPress={() =>Linking.openURL("https://pcoc.moc.go.th/view/report_monitor_products_and_service.aspx")}>
+        <Image style={styles.newlink} source={{uri:"https://www.moc.go.th/th/file/get/file/2021092012df53fea8b3adfa6c2ec456dd22e204120828.png"}} />
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.layoutnew} onPress={() =>Linking.openURL("https://xn--42ca1c5gh2k.com/?doing_wp_cron=1648183167.4098389148712158203125")}>
+        <Image style={styles.newlink} source={{uri:"https://www.moc.go.th/th/file/get/file/20210505fb38783a2b015451aca2b2894dd08140103810.png"}} />
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.layoutnew} onPress={() =>Linking.openURL("https://data.moc.go.th/")}>
+        <Image style={styles.newlink} source={{uri:"https://www.moc.go.th/th/file/get/file/202201140ba089c0f59973af7976cb7aba8a1c30180002.png"}} />
+        </TouchableOpacity>
+
+      </ScrollView>
 
       <Text style={styles.newstext}>
         Price Check
       </Text>
+
       <ScrollView style={styles.scrollView} horizontal={true}>
 
         <View style={styles.layout}>
@@ -190,6 +212,14 @@ const styles = StyleSheet.create({
     marginVertical:15,
     backgroundColor:'#1E3774',
   }
+  ,layoutnew:{
+    borderRadius:25,
+    flexDirection:'row',
+    alignItems:"center",
+    paddingHorizontal:0,
+    marginHorizontal:10,
+    marginVertical:15,
+  }
   ,
   seafood:{
     width:125,
@@ -216,6 +246,11 @@ const styles = StyleSheet.create({
   vegetable:{
     width:150,
     height:100,
+  },
+  newlink:{
+    width: 850,
+    height:240,
+    borderRadius:25,
   }
 })
 

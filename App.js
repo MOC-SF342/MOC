@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet,Text,View } from 'react-native';
 import { NavigationContainer, CommonActions } from '@react-navigation/native';
 
 import Tabs from './navigation/tabs';

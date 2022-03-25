@@ -3,11 +3,10 @@ import { Text, View, StyleSheet,Image ,Button,TouchableOpacity,Linking } from 'r
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { ScrollView } from 'react-native-gesture-handler';
 import { NavigationContainer, CommonActions } from '@react-navigation/native';
-
 import Header from './Head'
 import { color } from 'react-native-reanimated';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Header/>
@@ -54,7 +53,10 @@ const Home = () => {
             <Text style={styles.text}>
               ผลไม้
             </Text>
-            <Text style={styles.textbut}>
+            <Text style={styles.textbut}
+              onPress={() =>
+                navigation.navigate('Fruit')
+              }>
               เช็คราคา
             </Text>
           </View>
@@ -70,7 +72,10 @@ const Home = () => {
             <Text style={styles.text}>
               อาหารทะเล
             </Text>
-            <Text style={styles.textbut}>
+            <Text style={styles.textbut}
+              onPress={() =>
+                navigation.navigate('SeaFood')
+              }>
               เช็คราคา
             </Text>
           </View>
@@ -86,7 +91,10 @@ const Home = () => {
             <Text style={styles.text}>
               เนื้อสัตว์
             </Text>
-            <Text style={styles.textbut}>
+            <Text style={styles.textbut}
+              onPress={() =>
+                navigation.navigate('Meat')
+              }>
               เช็คราคา
             </Text>
           </View>
@@ -102,7 +110,10 @@ const Home = () => {
             <Text style={styles.text}>
               น้ำมัน
             </Text>
-            <Text style={styles.textbut}>
+            <Text style={styles.textbut}
+              onPress={() =>
+                navigation.navigate('Oil')
+              }>
               เช็คราคา
             </Text>
           </View>
@@ -118,7 +129,10 @@ const Home = () => {
             <Text style={styles.text}>
               ข้าว
             </Text>
-            <Text style={styles.textbut}>
+            <Text style={styles.textbut}
+            onPress={() =>
+              navigation.navigate('Rice')
+            }>
               เช็คราคา
             </Text>
           </View>
@@ -134,7 +148,10 @@ const Home = () => {
             <Text style={styles.text}>
               ผัก
             </Text>
-            <Text style={styles.textbut}>
+            <Text style={styles.textbut}
+            onPress={() =>
+              navigation.navigate('Vegetable')
+            }>
               เช็คราคา
             </Text>
           </View>
@@ -142,12 +159,50 @@ const Home = () => {
         </View>
       
       </ScrollView>
+      <View style={styles.navigaterbar}>
+        <TouchableOpacity style={styles.navigatericonbox} onPress={() =>navigation.navigate('News')}>
+        <Image
+          source={require('../assets/icons/news.png')}
+          style={styles.navigatericon}
+        />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.navigatericonbox} onPress={() =>navigation.navigate('Home')}>
+        <Image
+          source={require('../assets/icons/home.png')}
+          style={styles.navigatericon}
+        />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.navigatericonbox} onPress={() =>navigation.navigate('Graph')}>
+        <Image
+          source={require('../assets/icons/graph.png')}
+          style={styles.navigatericon}
+        />
+        </TouchableOpacity>
+      </View>
 
     </View>
   )
 }
 
 const styles = StyleSheet.create({
+  navigaterbar:{
+    backgroundColor:'#1E3774',
+    borderRadius:15,
+    marginHorizontal:10,
+    marginBottom:5,
+    flexDirection:'row',
+    justifyContent:'space-evenly',
+  },
+  navigatericonbox:{
+    padding:5,
+    backgroundColor:'white',
+    borderRadius:10,
+    marginVertical:8
+  },
+  navigatericon: {
+    width: 30,
+    height:30,
+  },
   container: {
     flex:1,
     flexDirection:'column',

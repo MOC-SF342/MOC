@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Oil = () => {
+const Oil = ({ navigation, route }) => {
   return (
     <View>
       <Text>Oil</Text>

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Vegetable = () => {
+const Vegetable= ({ navigation, route }) => {
   return (
     <View>
       <Text>Vegetable</Text>

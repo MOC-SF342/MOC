@@ -5,7 +5,7 @@ import Header from './Head';
 const Graph = () => {
   return (
     <View style={styles.container}>
-        <Header/>
+
         <Text>This is Graph Page</Text>
     </View>
   )

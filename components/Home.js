@@ -159,6 +159,7 @@ const Home = ({navigation}) => {
         </View>
       
       </ScrollView>
+
       <View style={styles.navigaterbar}>
         <TouchableOpacity style={styles.navigatericonbox} onPress={() =>navigation.navigate('News')}>
         <Image

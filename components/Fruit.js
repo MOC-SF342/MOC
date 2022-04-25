@@ -42,7 +42,6 @@ export default class Fruit extends React.Component {
 
             return (
                 <View style={styles.container}>
-                    <Header/>
                     <Text style={styles.topic}>ผลไม้</Text>
                     <Text style={styles.textapi}>{this.state.dataSource}</Text>
                 </View>

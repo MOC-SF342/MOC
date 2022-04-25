@@ -46,7 +46,7 @@ const News = ({ navigation }) => {
         {newdata.map((data, idx) => (
           <TouchableOpacity style={styles.layoutnew} key={idx} onPress={() => Linking.openURL(data.linkwebsite)}>
             <Image style={styles.newlink} source={{ uri: data.img }} />
-            <Text>{data.description.length > 140? data.description.slice(0,140)+ " ..." : data.description}</Text>
+            <Text style={styles.description}>{data.description.length > 140? data.description.slice(0,140)+ " ..." : data.description}</Text>
           </TouchableOpacity>
         ))
         }
@@ -129,6 +129,12 @@ const styles = StyleSheet.create({
     width: 30,
     height: 30,
   },
+  description:{
+    fontSize:13,
+    textAlign: 'left',
+    paddingHorizontal:10,
+    marginTop:5
+  }
 
 })
 

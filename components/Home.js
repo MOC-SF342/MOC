@@ -3,8 +3,10 @@ import { Text, View, StyleSheet,Image ,Button,TouchableOpacity,Linking } from 'r
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { ScrollView } from 'react-native-gesture-handler';
 import { NavigationContainer, CommonActions } from '@react-navigation/native';
-import Header from './Head'
 import { color } from 'react-native-reanimated';
+
+import Header from './Head'
+import NavBar from './NavigaterBar'
 
 const Home = ({navigation}) => {
   return (
@@ -160,26 +162,7 @@ const Home = ({navigation}) => {
       
       </ScrollView>
 
-      <View style={styles.navigaterbar}>
-        <TouchableOpacity style={styles.navigatericonbox} onPress={() =>navigation.navigate('News')}>
-        <Image
-          source={require('../assets/icons/news.png')}
-          style={styles.navigatericon}
-        />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navigatericonbox} onPress={() =>navigation.navigate('Home')}>
-        <Image
-          source={require('../assets/icons/home.png')}
-          style={styles.navigatericon}
-        />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navigatericonbox} onPress={() =>navigation.navigate('Graph')}>
-        <Image
-          source={require('../assets/icons/graph.png')}
-          style={styles.navigatericon}
-        />
-        </TouchableOpacity>
-      </View>
+      <NavBar/>
 
     </View>
   )

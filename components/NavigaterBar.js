@@ -20,7 +20,7 @@ const NavigaterBar = () => {
             style={styles.navigatericon} tintColor='white'
             />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navigatericonbox} onPress={() => navigation.navigate('Graph')}>
+        <TouchableOpacity style={styles.navigatericonbox} onPress={() => navigation.navigate('GraphSelect')}>
             <Image
             source={require('../assets/icons/graph.png')}
             style={styles.navigatericon} tintColor='white'

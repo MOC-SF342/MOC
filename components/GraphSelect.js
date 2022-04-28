@@ -1,14 +1,17 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Image, ScrollView, Linking } from 'react-native';
-import Header from './Head';
-import { NavigationContainer, CommonActions } from '@react-navigation/native';
+import { NavigationContainer, CommonActions, useNavigation } from '@react-navigation/native';
 
 import NavBar from './NavigaterBar'
 
-const CardType = () => {
+const CardType = (props) => {
+    const navigation = useNavigation();
     return (
-        <View style={styles.card_container}>
-            
+        <View style={styles.container}>
+            <TouchableOpacity style={styles.card_elements} onPress={() => navigation.navigate('GraphMeat')} >
+                <Image style={styles.card_img} source={props.pathImg}/>
+                <Text style={styles.card_text}>{props.text}</Text>
+            </TouchableOpacity>
         </View>
     );
 }
@@ -17,7 +20,12 @@ const GraphSelect = () => {
   return (
     <View style={styles.container}>
         <ScrollView style={styles.layoutScrollView}>
-            
+            <CardType pathImg={require('../assets/image/pig.jpg')} text='เนื้อสัตว์'/>
+            <CardType pathImg={require('../assets/image/pig.jpg')} text='ข้าว'/>
+            <CardType pathImg={require('../assets/image/pig.jpg')} text='ผลไม้'/>
+            <CardType pathImg={require('../assets/image/pig.jpg')} text='ผัก'/>
+            <CardType pathImg={require('../assets/image/pig.jpg')} text='อาหารทำเล'/>
+            <CardType pathImg={require('../assets/image/pig.jpg')} text='น้ำมัน'/>
         </ScrollView>
 
         <NavBar/>
@@ -31,6 +39,27 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
   },
+  card_elements: {
+      width: '80%',
+      height: 200,
+      backgroundColor: 'rgba(0,0,0,0.085)',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      borderRadius: 25,
+      marginTop: '5%',
+  },
+  card_img: {
+    height: 160,
+    width: '100%',
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
+  },
+  card_text: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: 'auto',    
+    fontSize: 22,
+  }
 })
 
 export default GraphSelect;

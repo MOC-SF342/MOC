@@ -13,6 +13,7 @@ import Oil from './components/Oil';
 import Vegetable from './components/Vegetable'
 import News from './components/News';
 import GraphSelect from './components/GraphSelect'
+import GraphMeat from './components/GraphMeat';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +34,7 @@ const App = () => {
         <Stack.Screen name="SeaFood" component={SeaFood} />
         <Stack.Screen name="News" component={News} />
         <Stack.Screen name="GraphSelect" component={GraphSelect} />
+        <Stack.Screen name="GraphMeat" component={GraphMeat} />
         {/*<Stack.Screen name="GraphMeat" component={GraphMeat} />
         <Stack.Screen name="GraphSea" component={GraphSea} />
         <Stack.Screen name="GraphVege" component={GraphVege} />

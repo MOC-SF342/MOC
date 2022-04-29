@@ -8,7 +8,7 @@ const CardType = (props) => {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.card_elements} onPress={() => navigation.navigate('GraphMeat')} >
+            <TouchableOpacity style={styles.card_elements} onPress={() => navigation.navigate(props.navTo)} >
                 <Image style={styles.card_img} source={props.pathImg}/>
                 <Text style={styles.card_text}>{props.text}</Text>
             </TouchableOpacity>
@@ -20,12 +20,12 @@ const GraphSelect = () => {
   return (
     <View style={styles.container}>
         <ScrollView style={styles.layoutScrollView}>
-            <CardType pathImg={require('../assets/image/pig.jpg')} text='เนื้อสัตว์'/>
-            <CardType pathImg={require('../assets/image/pig.jpg')} text='ข้าว'/>
-            <CardType pathImg={require('../assets/image/pig.jpg')} text='ผลไม้'/>
-            <CardType pathImg={require('../assets/image/pig.jpg')} text='ผัก'/>
-            <CardType pathImg={require('../assets/image/pig.jpg')} text='อาหารทำเล'/>
-            <CardType pathImg={require('../assets/image/pig.jpg')} text='น้ำมัน'/>
+            <CardType pathImg={require('../assets/image/pig.jpg')} text='เนื้อสัตว์' navTo='GraphMeat'/>
+            <CardType pathImg={require('../assets/image/ricebg.jpg')} text='ข้าว'/>
+            <CardType pathImg={require('../assets/image/ผลไม้.jpg')} text='ผลไม้'/>
+            <CardType pathImg={require('../assets/image/ผัก.jpg')} text='ผัก'/>
+            <CardType pathImg={require('../assets/image/อาหารทะเล.jpg')} text='อาหารทะเล'/>
+            <CardType pathImg={require('../assets/image/น้ำมัน.jpg')} text='น้ำมัน'/>
         </ScrollView>
 
         <NavBar/>

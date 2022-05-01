@@ -21,11 +21,11 @@ const GraphSelect = () => {
     <View style={styles.container}>
         <ScrollView style={styles.layoutScrollView}>
             <CardType pathImg={require('../assets/image/pig.jpg')} text='เนื้อสัตว์' navTo='GraphMeat'/>
-            <CardType pathImg={require('../assets/image/ricebg.jpg')} text='ข้าว'/>
-            <CardType pathImg={require('../assets/image/ผลไม้.jpg')} text='ผลไม้'/>
-            <CardType pathImg={require('../assets/image/ผัก.jpg')} text='ผัก'/>
-            <CardType pathImg={require('../assets/image/อาหารทะเล.jpg')} text='อาหารทะเล'/>
-            <CardType pathImg={require('../assets/image/น้ำมัน.jpg')} text='น้ำมัน'/>
+            <CardType pathImg={require('../assets/image/ricebg.jpg')} text='ข้าว' navTo='GraphRice'/>
+            <CardType pathImg={require('../assets/image/ผลไม้.jpg')} text='ผลไม้' navTo='GraphFruit'/>
+            <CardType pathImg={require('../assets/image/ผัก.jpg')} text='ผัก' navTo='GraphVegetable'/>
+            <CardType pathImg={require('../assets/image/อาหารทะเล.jpg')} text='อาหารทะเล' navTo='GraphSea'/>
+            <CardType pathImg={require('../assets/image/น้ำมัน.jpg')} text='น้ำมัน' navTo='GraphOil'/>
         </ScrollView>
 
         <NavBar/>
@@ -45,8 +45,10 @@ const styles = StyleSheet.create({
       backgroundColor: 'rgba(0,0,0,0.085)',
       marginLeft: 'auto',
       marginRight: 'auto',
-      borderRadius: 25,
       marginTop: '5%',
+      marginBottom: '2%',
+      borderRadius: 25,
+      
   },
   card_img: {
     height: 160,

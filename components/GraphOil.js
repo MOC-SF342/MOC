@@ -4,50 +4,58 @@ import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import NavBar from './NavigaterBar';
 import GraphItem from './GraphItem';
 
-const GraphMeat = () => {
-  const datapork = [
+const GraphOil = () => {
+  const dataPurePeanutOil = [
     Math.random() * 100,
     Math.random() * 100,
     Math.random() * 100,
-    198.7,
+    145,
   ]
 
-  const datachicken = [
+  const dataPureSoybeanOil = [
     Math.random() * 100,
     Math.random() * 100,
     Math.random() * 100,
-    70,
+    58.48,
   ]
 
-  const dataeggd = [
+  const dataPureRiceBranOil = [
     Math.random() * 100,
     Math.random() * 100,
     Math.random() * 100,
-    4.82,
+    65.285,
   ]
 
-  const dataeggc = [
+  const dataReginedPalmOil = [
     Math.random() * 100,
     Math.random() * 100,
     Math.random() * 100,
-    4.62,
+    59.91,
   ]
 
-  const datacow = [
+  const dataInstantSunflowerOil = [
     Math.random() * 100,
     Math.random() * 100,
     Math.random() * 100,
-    260,
+    80,
+  ]
+
+  const dataInstantCoconutOil = [
+    Math.random() * 100,
+    Math.random() * 100,
+    Math.random() * 100,
+    202,
   ]
 
   return (
     <View style={styles.container}>
       <ScrollView>
-        <GraphItem topic='หมู' data={datapork} />
-        <GraphItem topic='ไก่' data={datachicken} />
-        <GraphItem topic='ไข่เป็ด' data={dataeggd} />
-        <GraphItem topic='ไข่ไก่' data={dataeggc} />
-        <GraphItem topic='เนื้อโค' data={datacow} />
+        <GraphItem topic='น้ำมันถั่วลิสงบริสุทธิ์' data={dataPurePeanutOil} />
+        <GraphItem topic='น้ำมันถั่วเหลืองบริสุทธิ์' data={dataPureSoybeanOil} />
+        <GraphItem topic='น้ำมันรำข้าวบริสุทธิ์' data={dataPureRiceBranOil} />
+        <GraphItem topic='น้ำมันปาล์มสำเร็จรูป' data={dataReginedPalmOil} />
+        <GraphItem topic='น้ำมันทานตะวันสำเร็จรูป' data={dataInstantSunflowerOil} />
+        <GraphItem topic='น้ำมันมะพร้าวสำเร็จรูป' data={dataInstantCoconutOil} />
       </ScrollView>
       <View style={styles.nav}>
         <NavBar/>
@@ -84,4 +92,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default GraphMeat;
+export default GraphOil;

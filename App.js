@@ -10,10 +10,15 @@ import Meat from './components/Meat';
 import Fruit from './components/Fruit';
 import SeaFood from './components/SeaFood';
 import Oil from './components/Oil';
-import Vegetable from './components/Vegetable'
+import Vegetable from './components/Vegetable';
 import News from './components/News';
-import GraphSelect from './components/GraphSelect'
+import GraphSelect from './components/GraphSelect';
 import GraphMeat from './components/GraphMeat';
+import GraphVege from './components/GraphVegetable';
+import GraphFruit from './components/GraphFruit';
+import GraphRice from './components/GraphRice';
+import GraphSeaFood from './components/GraphSeaFood';
+import GraphOil from './components/GraphOil';
 
 const Stack = createNativeStackNavigator();
 
@@ -35,12 +40,11 @@ const App = () => {
         <Stack.Screen name="News" component={News} />
         <Stack.Screen name="GraphSelect" component={GraphSelect} />
         <Stack.Screen name="GraphMeat" component={GraphMeat} />
-        {/*<Stack.Screen name="GraphMeat" component={GraphMeat} />
-        <Stack.Screen name="GraphSea" component={GraphSea} />
-        <Stack.Screen name="GraphVege" component={GraphVege} />
+        <Stack.Screen name="GraphSea" component={GraphSeaFood} />
+        <Stack.Screen name="GraphVegetable" component={GraphVege} />
         <Stack.Screen name="GraphFruit" component={GraphFruit} />
         <Stack.Screen name="GraphRice" component={GraphRice} />
-        <Stack.Screen name="GraphOil" component={GraphOil} /> */}
+        <Stack.Screen name="GraphOil" component={GraphOil} />
       </Stack.Navigator>
     </NavigationContainer>
     

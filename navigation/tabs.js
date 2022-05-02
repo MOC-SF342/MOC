@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Image } from 'react-native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import Home from '../components/Home';
 import News from '../components/News';
-import GraphP from '../components/Graph'
+import GraphP from '../components/GraphMeat'
 
 const Tab = createMaterialBottomTabNavigator();
 

@@ -3,6 +3,8 @@ import { Text, View, StyleSheet, TouchableOpacity, Image, ScrollView, Linking } 
 import Header from './Head';
 import { NavigationContainer, CommonActions } from '@react-navigation/native';
 
+import NavigaterBar from './NavigaterBar';
+
 const News = ({ navigation }) => {
   const newdata = [{
     img: 'https://www.moc.go.th/cms/s1/u127/%E0%B8%A1.%E0%B8%84.%2065/%E0%B8%A1%E0%B8%B5.%E0%B8%84.%2065/21_1_.jpg',
@@ -54,26 +56,7 @@ const News = ({ navigation }) => {
 
       </ScrollView>
 
-      <View style={styles.navigaterbar}>
-        <TouchableOpacity style={styles.navigatericonbox} onPress={() => navigation.navigate('News')}>
-          <Image
-            source={require('../assets/icons/news.png')}
-            style={styles.navigatericon}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navigatericonbox} onPress={() => navigation.navigate('Home')}>
-          <Image
-            source={require('../assets/icons/home.png')}
-            style={styles.navigatericon}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navigatericonbox} onPress={() => navigation.navigate('Graph')}>
-          <Image
-            source={require('../assets/icons/graph.png')}
-            style={styles.navigatericon}
-          />
-        </TouchableOpacity>
-      </View>
+      <NavigaterBar/>
 
     </View>
   )

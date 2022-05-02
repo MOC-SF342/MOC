@@ -83,7 +83,7 @@ const GraphSeaFood = () => {
         <GraphItem topic='หอยแครง' data={dataCockle} />
         <GraphItem topic='ปลาดุก' data={dataCatFish} />
         <GraphItem topic='ปลาทับทิม' data={dataPomegranateFish} />
-        <GraphItem topic='กุุ้งก้ามกราม' data={dataLobster} />
+        <GraphItem topic='กุ้งก้ามกราม' data={dataLobster} />
         <GraphItem topic='ปลาทูสด' data={dataMackerel} />
         <GraphItem topic='ปลาช่อน' data={dataSnakehead} />
         <GraphItem topic='หอยลาย' data={dataClam} />

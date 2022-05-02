@@ -54,14 +54,6 @@ const Meat= ({}) => {
           <DataTable.Cell>บาท/กก.</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row>
-          <DataTable.Cell>6</DataTable.Cell>
-          <DataTable.Cell>น้ำมันมะพร้าว</DataTable.Cell>
-          <DataTable.Cell >202</DataTable.Cell>
-          <DataTable.Cell >222.5</DataTable.Cell>
-          <DataTable.Cell>บาท/กก.</DataTable.Cell>
-        </DataTable.Row>
-
       </DataTable>
     </View>
   );

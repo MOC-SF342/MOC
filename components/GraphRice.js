@@ -78,16 +78,16 @@ const GraphRice = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <GraphItem topic='ผักคะน้า (บาท ต่อ 100 กก.)' data={dataWhiteRice} />
-        <GraphItem topic='ผักบุ้งจีน (บาท ต่อ 100 กก.)' data={dataWhiteGrits} />
-        <GraphItem topic='ผักกวางตุ้ง (บาท ต่อ 100 กก.)' data={dataStickyRice} />
-        <GraphItem topic='ผักกาดหอม (บาท ต่อ 100 กก.)' data={dataParboiledRice} />
-        <GraphItem topic='กะหล่ำปลี (บาท ต่อ 100 กก.)' data={dataJasmineRice} />
-        <GraphItem topic='มะระจีน (บาท ต่อ 100 กก.)' data={dataJasmineGrits} />
-        <GraphItem topic='มะเขือเทศ (บาท ต่อ 100 กก.)' data={dataFragrantRice} />
-        <GraphItem topic='แตงกวา (บาท ต่อ 100 กก.)' data={dataWhiteRiceBran} />
-        <GraphItem topic='หน่อไม้ฝรั่ง (บาท ต่อ 100 กก.)' data={dataMilledRiceFlour} />
-        <GraphItem topic='มะนาว (บาท ต่อ 100 กก.)' data={dataCKhaosanChao} />
+        <GraphItem topic='ข้าวขาว 100%' data={dataWhiteRice} />
+        <GraphItem topic='ปลายข้าวขาว' data={dataWhiteGrits} />
+        <GraphItem topic='ข้าวสารเหนียว' data={dataStickyRice} />
+        <GraphItem topic='ข้าวนึ่ง 100%' data={dataParboiledRice} />
+        <GraphItem topic='ข้าวหอมมะลิ' data={dataJasmineRice} />
+        <GraphItem topic='ปลายข้าวหอมมะลิ' data={dataJasmineGrits} />
+        <GraphItem topic='ข้าวหอมปทุมธานี' data={dataFragrantRice} />
+        <GraphItem topic='รำข้าวขาว' data={dataWhiteRiceBran} />
+        <GraphItem topic='แป้งข้าวเจ้าโม่น้ำ' data={dataMilledRiceFlour} />
+        <GraphItem topic='ข้าวสารเจ้า' data={dataCKhaosanChao} />
       </ScrollView>
       <View style={styles.nav}>
         <NavBar/>

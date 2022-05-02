@@ -16,12 +16,7 @@
     "@react-navigation/material-top-tabs": "^6.1.1",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.2",
-<<<<<<< HEAD
-    "@react-navigation/stack": "^6.1.1",
-    "link": "^1.4.0",
-=======
     "@react-navigation/stack": "^6.2.1",
->>>>>>> 86272182d79ec86dd3adfab347281cdea4b1e83c
     "pod-install": "^0.1.31",
     "react": "17.0.2",
     "react-native": "^0.67.2",

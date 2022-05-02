@@ -78,16 +78,16 @@ const GraphFruit = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <GraphItem topic='ผักคะน้า' data={dataPapaya} />
-        <GraphItem topic='ผักบุ้งจีน' data={dataTangerine} />
-        <GraphItem topic='ผักกวางตุ้ง' data={dataWatermelon} />
-        <GraphItem topic='ผักกาดหอม' data={dataBanana} />
-        <GraphItem topic='กะหล่ำปลี' data={dataGuavaKimju} />
-        <GraphItem topic='มะระจีน' data={dataSavoeyGreenMango} />
-        <GraphItem topic='มะเขือเทศ' data={dataPomelo} />
-        <GraphItem topic='แตงกวา' data={dataRambutan} />
-        <GraphItem topic='หน่อไม้ฝรั่ง' data={dataMangosteen} />
-        <GraphItem topic='มะนาว' data={dataPineappleSriracha} />
+        <GraphItem topic='มะละกอ' data={dataPapaya} />
+        <GraphItem topic='ส้มเขียวหวาน' data={dataTangerine} />
+        <GraphItem topic='แตงโม' data={dataWatermelon} />
+        <GraphItem topic='กล้วยน้ำว้า' data={dataBanana} />
+        <GraphItem topic='ฝรั่งกิมจู' data={dataGuavaKimju} />
+        <GraphItem topic='มะม่วงเขียวเสวย' data={dataSavoeyGreenMango} />
+        <GraphItem topic='ส้มโอ' data={dataPomelo} />
+        <GraphItem topic='เงาะโรงเรียน' data={dataRambutan} />
+        <GraphItem topic='มังคุด' data={dataMangosteen} />
+        <GraphItem topic='สับปะรด ศรีราชา' data={dataPineappleSriracha} />
       </ScrollView>
       <View style={styles.nav}>
         <NavBar/>

@@ -6,45 +6,45 @@ import GraphItem from './GraphItem';
 
 const GraphOil = () => {
   const dataPurePeanutOil = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    150,
+    148,
+    147,
     145,
   ]
 
   const dataPureSoybeanOil = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
     58.48,
+    59.71,
+    61.93,
+    64.95
   ]
 
   const dataPureRiceBranOil = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
     65.285,
+    65.43,
+    67.52,
+    68.63
   ]
 
   const dataReginedPalmOil = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
     59.91,
+    60.45,
+    63.38,
+    65.37
   ]
 
   const dataInstantSunflowerOil = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
     80,
+    82,
+    83,
+    85
   ]
 
   const dataInstantCoconutOil = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
     202,
+    212,
+    219.5,
+    222.5
   ]
 
   return (

@@ -6,72 +6,72 @@ import GraphItem from './GraphItem';
 
 const GraphRice = () => {
   const dataWhiteRice = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    1431.8,
+    1431.6,
+    1428.8,
     1421.8,
   ]
 
   const dataWhiteGrits = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    1188.2,
+    1180.3,
+    1179.8,
     1177.28,
   ]
 
   const dataStickyRice = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    2042.15,
+    2022.15,
     2111.15,
+    2131.15
   ]
 
   const dataParboiledRice = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    1260.67,
+    1265.67,
+    1269.67,
     1259.67,
   ]
 
   const dataJasmineRice = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    2565.82,
+    2566.82,
+    2570.82,
     2560.82,
   ]
 
   const dataJasmineGrits = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    1268.36,
+    1266.36,
+    1264.36,
     1258.36,
   ]
 
   const dataFragrantRice = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    1920.36,
+    1920.36,
     1918.36,
+    1928.36
   ]
 
   const dataWhiteRiceBran = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    1072.57,
+    1067.57,
+    1075.57,
     1065.57,
   ]
 
   const dataMilledRiceFlour = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    721.8,
+    718.8,
+    715.8,
     711.8,
   ]
 
   const dataCKhaosanChao = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    3000,
+    2996,
+    970,
     2900,
   ]
 

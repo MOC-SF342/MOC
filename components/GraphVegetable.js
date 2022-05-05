@@ -6,72 +6,72 @@ import GraphItem from './GraphItem';
 
 const GraphVege = () => {
   const datakale = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    31,
+    31.72,
+    31.2,
     30.67,
   ]
 
   const dataglory = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    26,
+    25.73,
+    26.80,
     27.83,
   ]
 
   const datacantonese = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    23,
+    22.7,
+    24.3,
     23,
   ]
 
   const datalettuce = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    36.18,
+    36.07,
+    35.6,
     35.17,
   ]
 
   const datacabbage = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    20,
+    22,
+    24,
     25,
   ]
 
   const datagourd_chinese = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    27,
+    29,
+    30,
     32,
   ]
 
   const datatomato = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    21,
+    25.23,
+    27.32,
     30.5,
   ]
 
   const datacucumber = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    19.67,
+    20.22,
+    23,
     24.67,
   ]
 
   const dataasparagus = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    138.67,
+    151.46,
+    165.90,
     168.67,
   ]
 
   const datalemon = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    6.12,
+    6.04,
+    6.12,
     6.62,
   ]
 

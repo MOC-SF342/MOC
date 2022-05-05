@@ -6,16 +6,16 @@ import GraphItem from './GraphItem';
 
 const GraphMeat = () => {
   const datapork = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    190.04,
+    186.74,
+    192.07,
     198.7,
   ]
 
   const datachicken = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    65,
+    66,
+    70,
     70,
   ]
 
@@ -27,16 +27,16 @@ const GraphMeat = () => {
   ]
 
   const dataeggc = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
-    4.62,
+    4.72,
+    4.78,
+    4.8,
+    4.82,
   ]
 
   const datacow = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    250,
+    254,
+    256,
     260,
   ]
 

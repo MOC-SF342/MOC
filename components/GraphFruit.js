@@ -6,73 +6,73 @@ import GraphItem from './GraphItem';
 
 const GraphFruit = () => {
   const dataPapaya = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    25,
+    27,
     30,
+    25,
   ]
 
   const dataTangerine = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    49.31,
+    49.56,
+    46.36,
     51.36,
   ]
 
   const dataWatermelon = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    20.64,
+    19.64,
+    20.64,
     22.64,
   ]
 
   const dataBanana = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    31.82,
+    35.82,
+    37.82,
     41.82,
   ]
 
   const dataGuavaKimju = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    32,
     35,
+    33,
+    30,
   ]
 
   const dataSavoeyGreenMango = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    39.09,
+    40.09,
+    41.09,
     44.09,
   ]
 
   const dataPomelo = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    90,
+    93,
+    98,
     100,
   ]
 
   const dataRambutan = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    20,
+    19.50,
     21.51,
+    18.49
   ]
 
   const dataMangosteen = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    19,
+    18.08,
+    19.3,
     21.44,
   ]
 
   const dataPineappleSriracha = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
     28,
+    25,
+    24,
+    23,
   ]
 
   return (

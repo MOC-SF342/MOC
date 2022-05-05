@@ -6,72 +6,72 @@ import GraphItem from './GraphItem';
 
 const GraphSeaFood = () => {
   const dataWhiteShrimp = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    260.97,
+    263.97,
+    262.36,
     270.97,
   ]
 
   const dataSquid = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    226,
+    234,
+    242,
     266,
   ]
 
   const dataCockle = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    142,
+    130,
+    163,
     200,
   ]
 
   const dataCatFish = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    66.22,
+    68.51,
+    65.81,
     90,
   ]
 
   const dataPomegranateFish = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    79.84,
+    80.67,
+    80.95,
     99.35,
   ]
 
   const dataLobster = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    500,
+    450,
+    600,
     700,
   ]
 
   const dataMackerel = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    89.21,
+    89.92,
+    93.58,
     100,
   ]
 
   const dataSnakehead = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    154,
+    155.67,
+    150,
     170,
   ]
 
   const dataClam = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
     61.51,
+    57.13,
+    54,
+    51.38,
   ]
 
   const dataStripedCatFish = [
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
+    50.4,
+    49.8,
+    59.72,
     66.12,
   ]
 
